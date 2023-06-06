@@ -61,21 +61,7 @@ const Drawer = () => {
             }}
             initialParams={{ setToken: setToken }}
           />
-          <DrawerNav.Screen
-  name="Logout"
-  component={LoginScreen}
-  options={{
-    drawerIcon: ({ color, size }) => (
-      <Ionicons name="exit" size={size} color={color} />
-    ),
-  }}
-  listeners={{
-    tabPress: (e) => {
-      e.preventDefault();
-      handleLogout();
-    },
-  }}
-/>
+        
         </>
       ) : (
         <>
